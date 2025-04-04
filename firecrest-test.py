@@ -2,7 +2,6 @@ import os
 import time
 from firecrest import ClientCredentialsAuth
 from firecrest.v2 import Firecrest
-from utils import print_json
 from prefect import task, flow
 
 
