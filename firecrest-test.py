@@ -3,6 +3,8 @@ import time
 from firecrest import ClientCredentialsAuth
 from firecrest.v2 import Firecrest
 from prefect import task, flow
+from prefect.variables import Variable
+from prefect.blocks.system import Secret
 
 
 @task
