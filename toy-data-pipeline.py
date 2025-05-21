@@ -13,11 +13,11 @@ def save_data(data):
     print(f"Data saved: {data}")
 
 @flow
-def my_data_pipeline():
+def toy_data_pipeline():
     data = fetch_data()
     transformed_data = transform_data(data)
     save_data(transformed_data)
 
 # Run the flow
 if __name__ == "__main__":
-    my_data_pipeline.serve(name="data-pipeline-example", cron="* * * * *")
+    my_data_pipeline.serve(name="toy-data-pipeline", cron="* 5 * * *")
